@@ -203,3 +203,73 @@ export const interviewCovers = [
   "/tiktok.png",
   "/yahoo.png",
 ];
+
+export const dummyInterviews: Interview[] = [
+  {
+  id: "1",
+  userId: "user1",
+  role: "Frontend Developer",
+  type: "Technical",
+  techstack: ["React", "TypeScript", "Next. js", "Tailwind CSS"],
+  level: "Junior",
+  questions: ["What is React?"],
+  finalized: false,
+  createdAt: "2024-03-15T10:00:00Z",
+  },
+  {
+    id: "2",
+    userId: "user2",
+    role: "Backend Developer",
+    type: "Technical",
+    techstack: ["Node.js", "Express", "MongoDB", "TypeScript"],
+    level: "Mid-level",
+    questions: ["Explain the event loop in Node.js?"],
+    finalized: false,
+    createdAt: "2024-03-16T11:00:00Z"
+  },
+  {
+    id: "3",
+    userId: "user3",
+    role: "Full Stack Developer",
+    type: "Technical",
+    techstack: ["React", "Node.js", "Next.js", "Tailwind CSS"],
+    level: "Senior",
+    questions: ["How does server-side rendering work in Next.js?"],
+    finalized: true,
+    createdAt: "2024-03-17T12:00:00Z"
+  },
+  {
+    id: "4",
+    userId: "user4",
+    role: "Data Scientist",
+    type: "Technical",
+    techstack: ["Python", "Pandas", "NumPy", "TensorFlow"],
+    level: "Junior",
+    questions: ["What is a neural network?"],
+    finalized: false,
+    createdAt: "2024-03-18T09:30:00Z"
+  },
+  {
+    id: "5",
+    userId: "user5",
+    role: "DevOps Engineer",
+    type: "Technical",
+    techstack: ["Docker", "Kubernetes", "AWS", "Terraform"],
+    level: "Mid-level",
+    questions: ["How do containers differ from virtual machines?"],
+    finalized: true,
+    createdAt: "2024-03-19T14:15:00Z"
+  },
+  {
+    id: "6",
+    userId: "user6",
+    role: "UX/UI Designer",
+    type: "Non-Technical",
+    techstack: ["Figma", "Sketch", "Adobe XD"],
+    level: "Senior",
+    questions: ["How do you approach user-centered design?"],
+    finalized: false,
+    createdAt: "2024-03-20T15:45:00Z"
+  }  
+  
+];
