@@ -1,17 +1,23 @@
 import React from 'react'
 import { FormControl,  FormItem, FormLabel, FormMessage } from './ui/form'
 import { Input } from './ui/input'
-import { Control, Controller, FieldValues } from 'react-hook-form'
+import { Control, Controller, FieldValues, Path } from 'react-hook-form'
 
 interface FormFieldProps<T extends FieldValues> {
-    control: Control<T>
-    name: keyof T
-    label: string
-    placeholder?: string
-    type?: 'text' | 'password' | 'email' | 'file'
+  control: Control<T>;
+  name: Path<T>;
+  label: string;
+  placeholder?: string;
+  type?: "text" | "email" | "password";
 }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const FormField = ({control, name, label, placeholder, type="text"}: FormFieldProps<T>) => (
+
+const FormField = <T extends FieldValues>({
+  control,
+  name,
+  label,
+  placeholder,
+  type = "text",
+}: FormFieldProps<T>) => (
    <Controller name={name} control={control} render={({ field }) => (
     <FormItem>
         <FormLabel className='label'>{label}</FormLabel>
@@ -19,8 +25,7 @@ const FormField = ({control, name, label, placeholder, type="text"}: FormFieldPr
           <Input 
           className='input' 
           placeholder={placeholder} 
-          {...field} 
-          name={String(field.name)} 
+          {...field}  
           type={type}
           />
         </FormControl>
