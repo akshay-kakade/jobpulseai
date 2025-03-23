@@ -98,7 +98,7 @@ export const mappings = {
 };
 
 export const interviewer: CreateAssistantDTO = {
-  name: "Interviewer",
+  name: "Maverick",
   firstMessage:
     "Hello! Thank you for taking the time to speak with me today. I'm excited to learn more about you and your experience.",
   transcriber: {
@@ -273,3 +273,30 @@ export const dummyInterviews: Interview[] = [
   }  
   
 ];
+
+export const socials = [
+    {
+      id: '0',
+      title: 'Youtube',
+      icon: '/youtube.svg',
+      url: 'https://www.youtube.com/@itsgametimebudy',
+    },
+    {
+      id: '1',
+      title: 'GitHub',
+      icon: '/github.svg',
+      url: 'https://github.com/akshay-kakade',
+    },
+    {
+      id: '2',
+      title: 'Instagram',
+      icon: '/instagram.svg',
+      url: 'https://www.instagram.com/maverick_7821/?igsh=MTJiN3M3NDNjM2JkcA%3D%3D',
+    },
+    {
+      id: '3',
+      title: 'Linkdin',
+      icon: '/linkedin.svg',
+      url: 'https://www.linkedin.com/in/akshay-kakade-878399287/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    },
+  ];
