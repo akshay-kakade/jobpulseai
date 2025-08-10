@@ -25,7 +25,14 @@ export default function RootLayout({
       <body
         className={`${monaSans.className} antialiased pattern`}
       >
-        <NextTopLoader />
+        <NextTopLoader 
+          color="#dddfff"
+          height={4}
+          showSpinner={false}
+          shadow="0 0 10px #dddfff,0 0 5px #dddfff"
+          easing="ease"
+          speed={300}
+        />
         {children}
         <Toaster />
       </body>
